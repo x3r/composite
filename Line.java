@@ -4,7 +4,6 @@ import java.awt.Graphics2D;
 import javax.swing.JPanel;
 
 public class Line extends Shape {
-//	JPanel jPanel = new JPanel();
 
 	int xLeft, xRight, yTop, yBottom;
 

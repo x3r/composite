@@ -1,11 +1,6 @@
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-
-import javax.swing.JPanel;
 
 public class Line extends Shape {
-//	JPanel jPanel = new JPanel();
-
 	int xLeft, xRight, yTop, yBottom;
 
 	public Line(int xLeft, int yTop, int xRight, int yBottom) {
@@ -23,7 +18,6 @@ public class Line extends Shape {
 
 	public void draw(Graphics g) {
 		g.drawLine(xLeft, yTop, xRight, yBottom);
-		System.out.println("Drawn");
 	}
 
 }

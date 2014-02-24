@@ -22,7 +22,6 @@ public class Line extends Shape {
 
 	public void draw(Graphics g) {
 		g.drawLine(xLeft, yTop, xRight, yBottom);
-		System.out.println("Drawn");
 	}
 
 }

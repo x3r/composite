@@ -8,6 +8,7 @@ public class Test extends JPanel {
 		JFrame app = new JFrame("Village");
 		app.setVisible(true);
 		app.setSize(1200, 400);
+		app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		app.add(new Test());
 	}
 

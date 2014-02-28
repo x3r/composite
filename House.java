@@ -12,10 +12,11 @@ public class House extends Shape {
 	@Override
 	public void buildShape() {
 		Rectangle r = new Rectangle(xLeft, yTop, height, width);
-		Rectangle houseDoor = new Rectangle(xLeft+width/2, yTop+height/2, height/2, width/3);
-		houseDoor.buildShape();
 		r.buildShape();
 		Triangle t = new Triangle(xLeft, yTop, width);
 		t.buildShape();
+		Rectangle houseDoor = new Rectangle(xLeft + width / 2, yTop + height
+				/ 2, height / 2, width / 3);
+		houseDoor.buildShape();
 	}
 }

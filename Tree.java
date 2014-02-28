@@ -1,4 +1,4 @@
-public class Tree extends Shape {
+public class Tree extends CompositeShape {
 	private int xLeft, yTop, leafSize, treeHeight;
 
 	public Tree(int xLeft, int yTop, int leafSize, int treeHeight) {

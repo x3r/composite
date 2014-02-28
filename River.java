@@ -1,4 +1,4 @@
-public class River extends Shape {
+public class River extends CompositeShape {
 	Point top, bottom;
 
 	public River(Point top, Point bottom) {

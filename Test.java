@@ -14,7 +14,7 @@ public class Test extends JPanel {
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		Shape[] shapes = { new House(200, 200, 60, 100),
+		IShape[] shapes = { new House(200, 200, 60, 100),
 				new House(350, 200, 60, 100), new House(700, 300, 40, 60),
 				new Tree(880, 240, 20, 100), new House(800, 200, 40, 60),
 				new Tree(980, 240, 20, 100), new House(900, 200, 40, 60),
@@ -24,7 +24,7 @@ public class Test extends JPanel {
 				new Tree(650, 150, 20, 100), new Tree(700, 150, 20, 100),
 				new Tree(750, 150, 20, 100),
 				new River(new Point(550, 0), new Point(450, 400)) };
-		for (Shape shape : shapes)
+		for (IShape shape : shapes)
 			shape.draw(g);
 	}
 

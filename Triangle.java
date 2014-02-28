@@ -1,4 +1,4 @@
-public class Triangle extends Shape {
+public class Triangle extends CompositeShape {
 	private int xLeft, yTop, width;
 
 	public Triangle(int xLeft, int yTop, int width) {

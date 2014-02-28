@@ -1,4 +1,4 @@
-public class House extends Shape {
+public class House extends CompositeShape {
 	int xLeft, yTop, height, width;
 
 	public House(int xLeft, int yTop, int height, int width) {
@@ -11,12 +11,9 @@ public class House extends Shape {
 
 	@Override
 	public void buildShape() {
-		Rectangle r = new Rectangle(xLeft, yTop, height, width);
-		r.buildShape();
-		Triangle t = new Triangle(xLeft, yTop, width);
-		t.buildShape();
-		Rectangle houseDoor = new Rectangle(xLeft + width / 2, yTop + height
-				/ 2, height / 2, width / 3);
-		houseDoor.buildShape();
+		shapes.add(new Rectangle(xLeft, yTop, height, width));
+		shapes.add(new Triangle(xLeft, yTop, width));
+		shapes.add(new Rectangle(xLeft + width / 2, yTop + height / 2,
+				height / 2, width / 3));
 	}
 }

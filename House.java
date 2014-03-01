@@ -10,7 +10,7 @@ public class House extends CompositeShape {
 	}
 
 	@Override
-	public void buildShape() {
+	protected void buildShape() {
 		shapes.add(new Rectangle(xLeft, yTop, height, width));
 		shapes.add(new Triangle(xLeft, yTop, width));
 		shapes.add(new Rectangle(xLeft + width / 2, yTop + height / 2,

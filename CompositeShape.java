@@ -11,5 +11,5 @@ public abstract class CompositeShape implements IShape {
 			shape.draw(g);
 	}
 
-	public abstract void buildShape();
+	protected abstract void buildShape();
 }

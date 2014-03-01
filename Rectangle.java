@@ -12,7 +12,7 @@ public class Rectangle extends CompositeShape {
 	}
 
 	@Override
-	public void buildShape() {
+	protected void buildShape() {
 		shapes.add(new Line(xleft, ytop, xleft + width, ytop));
 		shapes.add(new Line(xleft, ytop + height, xleft + width, ytop + height));
 		shapes.add(new Line(xleft, ytop, xleft, ytop + height));

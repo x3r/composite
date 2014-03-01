@@ -9,7 +9,7 @@ public class Triangle extends CompositeShape {
 	}
 
 	@Override
-	public void buildShape() {
+	protected void buildShape() {
 		shapes.add(new Line(xLeft, yTop, xLeft + width, yTop));
 		shapes.add(new Line(xLeft, yTop, xLeft + width / 2, yTop - width / 2));
 		shapes.add(new Line(xLeft + width / 2, yTop - width / 2, xLeft + width,

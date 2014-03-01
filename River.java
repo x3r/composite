@@ -7,7 +7,7 @@ public class River extends CompositeShape {
 	}
 
 	@Override
-	public void buildShape() {
+	protected void buildShape() {
 		shapes.add(new Line(bottom.x, bottom.y, top.x, top.y));
 		shapes.add(new Line(bottom.x + 50, bottom.y, top.x + 50, top.y));
 	}
